@@ -1,0 +1,7 @@
+/* Estilo para el contenedor de la lista de las tareas generadas */
+.tareas-lista-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 15px;
+}

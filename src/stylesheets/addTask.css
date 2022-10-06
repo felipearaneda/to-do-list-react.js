@@ -1,0 +1,31 @@
+/* Estilo para la barra de añadir una tarea */
+.tarea-formulario {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+}
+
+/* Estilo para el input de añadir una tarea */
+.tarea-input {
+  width: 90%;
+  font-size: 18px;
+  font-family: cursive, vintage;
+  background-color: white;
+  padding: 14px 32px 14px 16px;
+  border: none;
+  outline: none;
+}
+
+/* Estilo para el botón de añadir una tarea */
+.tarea-boton {
+  padding: 15px;
+  font-size: 18px;
+  font-family: cursive, vintage;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: white;
+  color: grey;
+  text-transform: capitalize;
+}

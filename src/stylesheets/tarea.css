@@ -1,0 +1,53 @@
+/* Estilo para cada tarea generada con su "div" */
+.tarea-contenedor {
+  width: 94.5%;
+  min-height: 40px;
+  margin: 5px 0;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  border-radius: 7px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+/* Estilo para el texto de cada tarea */
+.tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  overflow-wrap: anywhere;
+}
+
+/* Estilo para el ícono de eliminar de cada tarea */
+.tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 3px;
+}
+
+/* Degradé para las tareas y añadir dinamismo */
+.tarea-contenedor:nth-child(3n + 1) {
+  background-color: #2374e1;
+}
+
+.tarea-contenedor:nth-child(3n + 2) {
+  background-color: #4288e5;
+}
+
+.tarea-contenedor:nth-child(3n + 3) {
+  background-color: #5b97e9;
+}
+
+.tarea-contenedor:nth-child(3n + 4) {
+  background-color: #74a7ec;
+}
+
+/* Estilo para cuando se haga click en la tarea y cambie de color */
+.tarea-contenedor.completed {
+  background-color: #2ab386;
+  text-decoration: line-through solid;
+}

@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+/*estructura general*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*estilo general*/
+html, body {
+  color: white;
+  background-color: #212121;
+  font-family: cursive, vintage;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*toda la aplicación*/
+.app {
+  display: flex;
+  flex: 1 1 0px;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*estructura de lista lateral*/
+.list-item {
+  padding: 12px 24px 12px 24px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.list-item:hover {
+  background-color: #383838;
+}
+
+/*parte principal de la to do list*/
+.main {
+  flex: 1 1 0px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: auto;
+  padding: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+/*estilo de la lista lateral*/
+.sideBar {
+  width: 20%;
+  background-color: #2a2a2a; 
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin-bottom: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sideBar-content {
+  margin: 0.5vh 5vh;
+}
+
+/*footer de barra lateral*/
+.sideBar-footer {
+  margin-top: auto;
+}
+
+/*logo de libro*/
+.bookLogo {
+  width: 45px;
+  height: 25px;
+}
+
+/*header barra lateral*/
+.sideBarHeader {
+  text-align: center;
+  padding: 4vh 5vw;
+  font-size: 20px;
+  background-color: #383838;
+  border-radius: 20px;
+  margin: 15px 15px;
+}
+
+/*header estructura general*/
+.header {
+  text-align: center;
+  background-color: #2374e1;
+  padding: 12px;
+}
+
+/* Estilo para la fecha */
+.date {
+  font-size: 13px;
+  font-family: sans-serif;
+  padding: 5px 0 15px 5px;;
 }
